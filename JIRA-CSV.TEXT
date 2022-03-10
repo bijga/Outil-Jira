@@ -1,0 +1,17 @@
+You can easily and automatically import Jira Cloud data directly into Excel by following these steps:
+
+ 
+
+1. Create a filter view in Jira with all of your desired columns, save it, and make a note of the path.  Example: https://mycompany.atlassian.net/issues/?filter=11940
+
+2. Change the path to https://mycompany.atlassian.net/sr/jira.issueviews:searchrequest-csv-current-fields/11940/SearchRequest-11940.csv
+
+Note that going to this URL in your browser returns a CSV file.
+
+3. Start Excel, and select Data menu, New query, From Other Sources, From Web
+
+4. A dialog will appear asking you for the URL. Paste in your CSV URL from step 2, and click OK
+
+5. You will be prompted with a permissions dialog.  Select Basic authentication, enter your Jira username and password, and click Connect.
+
+6. After Excel connects, you will see a dialog with a preview of the table.  Click Load to load it into the current worksheet.
